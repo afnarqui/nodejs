@@ -1,14 +1,14 @@
-const http = require('http')
 
-const hostname = '127.0.0.1'
+var fs = require('fs')
 
-const port = '3000'
+/*
+utilizando el módulo fs de node para explicar los metodos async 
+devuelve una representación del archivo 
+datos esta en una representación de tipo buffer y es un archivo no leible por un ser humano
+*/
+let datos = fs.readFileSync('index.html')
 
-const server = http.createServer((req,res)=>{
-    res.statusCode = 200
-    res.setHeader('Content-Type','text/plain')
-    res.end('aja...')
-})
+console.log(datos.toString())
 
-server.listen(port,hostname,()=>console.log(`servidor ejecutado desde el puerto: ${port}`))
+console.log('esto es un mensaje')
 
