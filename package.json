@@ -3,16 +3,7 @@
   "version": "1.0.0",
   "description": "nodejs v6\r https://nodejs.org/api/",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "andrés naranjo<afnarqui@hotmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-polyfill": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babelify": "^7.3.0"
-  }
+  "license": "ISC"
 }
